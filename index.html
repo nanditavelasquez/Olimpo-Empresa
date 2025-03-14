@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olimpo Innova</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="IMG/LOGO.png" alt="Logo Olimpo Innova">
+        </div>
+        <ul class="nav-links">
+            <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.html">Contáctanos</a></li>
+        </ul>
+    </nav>
+
+    <!-- Banner -->
+    <section id="banner">
+        <div class="contenido-banner">
+            <h1>Innovación y Transformación Digital</h1>
+            <p>Creando soluciones tecnológicas para un mundo mejor</p>
+        </div>
+        <div class="videos-banner">
+            <div class="video-container" id="video1-container">
+                <video id="video1" autoplay muted playsinline onended="reproducirSiguiente()">
+                    <source src="VIDEO/olimpo-innova.mp4" type="video/mp4">
+                </video>
+                <div class="botones-video" id="botones-video1">
+                    <button onclick="document.getElementById('video1').muted = false;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-volume-up-fill" viewBox="0 0 16 16">
+                        <path d="M11.536 14.01A8.47 8.47 0 0 0 14.026 8a8.47 8.47 0 0 0-2.49-6.01l-.708.707A7.48 7.48 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303z"/>
+                        <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.48 5.48 0 0 1 11.025 8a5.48 5.48 0 0 1-1.61 3.89z"/>
+                        <path d="M8.707 11.182A4.5 4.5 0 0 0 10.025 8a4.5 4.5 0 0 0-1.318-3.182L8 5.525A3.5 3.5 0 0 1 9.025 8 3.5 3.5 0 0 1 8 10.475zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06"/>
+                    </svg> Activar Sonido</button>
+                    <button onclick="document.getElementById('video1').play()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                    </svg> Reproducir</button>
+                    <button onclick="document.getElementById('video1').pause()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pause-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.25 5C5.56 5 5 5.56 5 6.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C7.5 5.56 6.94 5 6.25 5m3.5 0c-.69 0-1.25.56-1.25 1.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C11 5.56 10.44 5 9.75 5"/>
+                    </svg> Pausar</button>
+                </div>
+            </div>
+        
+            <div class="video-container" style="display:none;" id="video2-container">
+                <video id="video2" playsinline>
+                    <source src="VIDEO/videojuego-olimpo.mp4" type="video/mp4">
+                </video>
+                <div class="botones-video">
+                    <button onclick="document.getElementById('video1').muted = false;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-volume-up-fill" viewBox="0 0 16 16">
+                        <path d="M11.536 14.01A8.47 8.47 0 0 0 14.026 8a8.47 8.47 0 0 0-2.49-6.01l-.708.707A7.48 7.48 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303z"/>
+                        <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.48 5.48 0 0 1 11.025 8a5.48 5.48 0 0 1-1.61 3.89z"/>
+                        <path d="M8.707 11.182A4.5 4.5 0 0 0 10.025 8a4.5 4.5 0 0 0-1.318-3.182L8 5.525A3.5 3.5 0 0 1 9.025 8 3.5 3.5 0 0 1 8 10.475zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06"/>
+                    </svg> Activar Sonido</button>
+                    <button onclick="document.getElementById('video2').play()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                    </svg> Reproducir</button>
+                    <button onclick="document.getElementById('video2').pause()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pause-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.25 5C5.56 5 5 5.56 5 6.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C7.5 5.56 6.94 5 6.25 5m3.5 0c-.69 0-1.25.56-1.25 1.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C11 5.56 10.44 5 9.75 5"/>
+                    </svg> Pausar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="nuestros-clientes">
+        <h2>Nuestros Clientes</h2>
+        <div class="nuestros-clientes">
+            <div class="logos">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSYrigUm0Fqmkd_1EP3Y3EOMC4db9sC0npEw&s"
+                    alt="epm">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD5sbhH7rD4akZGQTfTgNiVce2e0Cqha9bDg&s"
+                    alt="comfama">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxU9UuXXA3jdPXsHQUiBIPhhOvMNKyZ_9hhw&s"
+                    alt="cordoblez">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo1_RVOhAwBAP0Rj3jlw7xEXYPB1vXkxiwTA&s"
+                    alt="udea">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHiox1GjeMEFK4sFpz8qVrwpdgBauHQjMLdQ&s"
+                    alt="procolombia">
+                <img src="https://suricatalabs.com/wp-content/uploads/2024/06/logo-innpulsa.png" alt="innpulsa">
+
+                <!-- Duplicamos para el efecto-->
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSYrigUm0Fqmkd_1EP3Y3EOMC4db9sC0npEw&s"
+                    alt="epm">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD5sbhH7rD4akZGQTfTgNiVce2e0Cqha9bDg&s"
+                    alt="comfama">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxU9UuXXA3jdPXsHQUiBIPhhOvMNKyZ_9hhw&s"
+                    alt="cordoblez">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo1_RVOhAwBAP0Rj3jlw7xEXYPB1vXkxiwTA&s"
+                    alt="udea">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHiox1GjeMEFK4sFpz8qVrwpdgBauHQjMLdQ&s"
+                    alt="procolombia">
+                <img src="https://suricatalabs.com/wp-content/uploads/2024/06/logo-innpulsa.png" alt="innpulsa">
+            </div>
+        </div>
+    </section>
+
+
+    <section id="testimonios" class="container my-5">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <div id="carouselTestimonios" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="testimonial-item text-center">
+                        <img src="IMG/cliente1.jpg" alt="Cliente 1" class="rounded-circle mb-3"
+                            style="width: 100px; height: 100px;">
+                        <p>"Excelente servicio, el equipo es altamente profesional y siempre está disponible cuando los
+                            necesito."</p>
+                        <h5>- Javier G, WordPress Dev.</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial-item text-center">
+                        <img src="IMG/cliente2.jpg" alt="Cliente 2" class="rounded-circle mb-3"
+                            style="width: 100px; height: 100px;">
+                        <p>"Gracias al equipo de desarrollo, nuestras operaciones han mejorado significativamente.
+                            Totalmente recomendados."</p>
+                        <h5>- Ana García, Directora de Marketing.</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial-item text-center">
+                        <img src="IMG/cliente3.jpg" alt="Cliente 3" class="rounded-circle mb-3"
+                            style="width: 100px; height: 100px;">
+                        <p>"Gran experiencia de trabajo. El proceso fue fluido y los resultados han sido excelentes."
+                        </p>
+                        <h5>- Carlos López, Director de estrategia digital.</h5>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonios"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonios"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+
+    <section class="por-que-elegirnos">
+        <h2>¿Por qué elegirnos?</h2>
+        <div class="tarjeta-elegirnos">
+            <div class="razon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                    class="bi bi-award-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M9.669.864 8 0 6.331.864 4.623.648 3.911 2.29 2.258 2.998 2.42 4.707l-1.53 1.19.588 1.69 1.537.13.13 1.537 1.69.588 1.19-1.53 1.707.163 1.194-1.538-1.53-1.19L9.58 2.998l-1.707-.163L9.669.864zM8 5.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zm-2.146 6.646-.708.708V16l2.146-2.146L8 14.5l.708-.708L11.5 16v-3.146l-.708-.708L8 13.293l-2.146-1.647z" />
+                </svg>
+                <h3>Experiencia Comprobada</h3>
+                <p>Contamos con años de trayectoria en el sector tecnológico, desarrollando soluciones innovadoras y
+                    eficientes.</p>
+            </div>
+            <div class="razon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                    class="bi bi-lightbulb" viewBox="0 0 16 16">
+                    <path
+                        d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1" />
+                </svg>
+                <h3>Innovación Constante</h3>
+                <p>Aplicamos las últimas tecnologías para ofrecer productos y servicios que se adaptan a las necesidades
+                    del mercado.</p>
+            </div>
+            <div class="razon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-headset"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5" />
+                </svg>
+                <h3>Soporte Personalizado</h3>
+                <p>Brindamos acompañamiento continuo para garantizar el éxito y la estabilidad de cada proyecto.</p>
+            </div>
+            <div class="razon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                    class="bi bi-people-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5" />
+                </svg>
+                <h3>Equipo Profesional</h3>
+                <p>Nuestro equipo está conformado por expertos apasionados que trabajan con dedicación y creatividad.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="certificaciones">
+        <h2>Nuestras Certificaciones</h2>
+        <div class="contenedor-certificaciones">
+            <img src="IMG/global-awards.jpg" alt="Certificación Global">
+            <img src="IMG/customer.jpg" alt="Certificación Customer">
+            <img src="IMG/stevie.jpg" alt="Certificación Stevie">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Olimpo Innova S.A.S - Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    // Funcion para reproducir el siguiente video
+    
+    <script>
+        function reproducirSiguiente() {
+            const video1Container = document.getElementById('video1-container');
+            const botonesVideo1 = document.getElementById('botones-video1');
+            const video2Container = document.getElementById('video2-container');
+            const video2 = document.getElementById('video2');
+    
+            if (video1Container && botonesVideo1) { // Verificamos si existen
+                video1Container.style.display = 'none';
+                botonesVideo1.style.display = 'none';
+            }
+    
+            if (video2Container && video2) { // Verificamos si el segundo video también está disponible
+                video2Container.style.display = 'block';
+                video2.play();
+            }
+        }
+    </script>
+</body>
+
+</html>

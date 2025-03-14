@@ -1,0 +1,813 @@
+* {
+    font-family: "Roboto";
+    font-optical-sizing: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 20px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.contenido-banner {
+    text-align: center;
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.video-container {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.video2-container {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+video {
+    width: 100%;
+    border: 5px solid #273171;
+    border-radius: 12px;
+    max-width: 400%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.botones-video button {
+    background: #273171;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    align-items: center;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.botones-video button:hover {
+    background: #1d255c;
+}
+
+.botones-video svg {
+    width: 20px;
+    height: 20px;
+}
+
+.contenido-banner {
+    max-width: 40%;
+}
+
+.contenido-banner h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: #273171;
+    
+}
+
+.contenido-banner p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #273171;
+}
+
+.seccion {
+    padding: 50px 20px;
+    background: #fff;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #273171;
+}
+
+.navbar {
+    background: linear-gradient(90deg, #144C87, #4a5fa1);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    height: 85px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+#testimonios {
+    padding: 50px 0;
+}
+
+#testimonios h2 {
+    font-size: 2.5rem;
+}
+
+.testimonial-item {
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-item p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.testimonial-item h5 {
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.carousel-inner {
+    text-align: center;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #273171;
+}
+
+.por-que-elegirnos {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.por-que-elegirnos h2 {
+    font-size: 2.5rem;
+    color: #273171;
+    margin-bottom: 50px;
+}
+
+.seccion-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 50px;
+}
+
+.tarjeta {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta h3 {
+    color: #273171;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.tarjeta p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.tarjeta ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tarjeta li {
+    background: #273171;
+    color: #fff;
+    padding: 8px 12px;
+    margin: 5px 0;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+
+.tarjeta-elegirnos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #273171;
+}
+
+.razon svg {
+    margin-bottom: 20px;
+    color: #273171;
+}
+
+
+.clientes {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.logos-clientes img {
+    width: 100px;
+    margin: 10px;
+}
+
+.nuestros-clientes h2 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.carrusel-clientes {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+}
+
+.logos {
+    display: inline-flex;
+    animation: deslizar 20s linear infinite;
+}
+
+.logos img {
+    width: 100px;
+    /* Ajusta según el tamaño deseado */
+    margin: 0 20px;
+    object-fit: contain;
+}
+
+@keyframes deslizar {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.informacion-empresa h2 {
+    text-align: center;
+    font-size: 2.0rem;
+    margin-top: 50px;
+}
+
+.info-contacto {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-contacto li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info-contacto svg {
+    margin-right: 8px;
+    color: #273171;
+}
+
+.info-contacto span {
+    font-size: 1.1rem;
+}
+
+.NIT {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.NIT li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.NIT svg {
+    margin-right: 5px;
+    color: #273171;
+}
+
+.NIT span {
+    font-size: 1.1rem;
+}
+
+.telefono {
+    list-style: none;
+    padding: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.telefono li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.telefono svg {
+    margin-right: 8px;
+    color: #273171;
+}
+
+.telefono span {
+    font-size: 1.1rem;
+}
+
+.correo-electronico {
+    list-style: none;
+    padding: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.correo-electronico li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.correo-electronico svg {
+    margin-right: 8px;
+    color: #273171;
+}
+
+.correo-electronico span {
+    font-size: 1.1rem;
+}
+
+.redes-sociales {
+    text-align: center;
+    padding: 20px;
+}
+
+.info-redes {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.info-redes li {
+    display: flex;
+    align-items: center;
+}
+
+.info-redes a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #273171;
+    font-weight: bold;
+}
+
+.info-redes svg {
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+    fill: #273171;
+}
+
+.info-redes a:hover {
+    text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    height: 70vh;
+    /* Reducimos la altura total */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-bg {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-size: cover;
+    /* Asegura que la imagen se ajuste sin deformarse */
+    background-position: center;
+    /* Centra bien la imagen */
+    background: url('../IMG/ciudad-futurista.jpg') no-repeat center center/cover;
+    filter: blur(3px);
+    /* Aplica el blur solo a la imagen */
+    z-index: -1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    /* Asegura que el texto esté por encima del fondo */
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+/* Secciones Misión y Visión */
+.seccion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.seccion img {
+    width: 40%;
+    border-radius: 8px;
+}
+
+.texto {
+    width: 50%;
+    padding: 20px;
+}
+
+.texto h2 {
+    font-size: 2rem;
+    color: #273171;
+}
+
+.texto p {
+    font-size: 1.1rem;
+    color: #273171;
+}
+
+.inversa {
+    flex-direction: row-reverse;
+}
+
+/* Nuestro Equipo */
+.equipo {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.equipo h2 {
+    font-size: 2.0rem;
+
+}
+
+.tarjetas-equipo {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.tarjeta {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(17, 16, 16, 0.234);
+    width: 280px;
+}
+
+.tarjeta img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.tarjeta h3 {
+    color: #273171;
+}
+
+.tarjeta p {
+    color: #273171;
+}
+
+.servicios {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    padding-top: 120px;
+}
+
+.servicios h2 {
+    text-align: center;
+    color: #273171;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.contenedor-tarjetas {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    margin-left: 30px;
+}
+
+.tarjeta {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta svg {
+    color: #273171;
+    margin-bottom: 10px;
+}
+
+.tarjeta h3 {
+    color: #273171;
+    font-size: 1.5rem;
+}
+
+.tarjeta p {
+    color: #273171;
+    font-size: 1rem;
+}
+
+.tecnologias {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.tecnologias li {
+    display: inline-block;
+    background: #273171;
+    color: #fff;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.modelos-contratacion {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+.modelos-contratacion h2 {
+    font-size: 2.5rem;
+    color: #273171;
+    margin-bottom: 50px;
+}
+
+.contenedor-modelos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.modelo {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.modelo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.modelo svg {
+    color: #273171;
+    margin-bottom: 20px;
+}
+
+.modelo h3 {
+    font-size: 1.5rem;
+    color: #273171;
+}
+
+.modelo p {
+    color: #555;
+    font-size: 1rem;
+}
+
+.encabezado-contacto {
+    position: relative;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.video-fondo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(2px); /* Desenfoque suave */
+    opacity: 0.8; /* Ligera transparencia */
+    z-index: -1;
+}
+
+.contenido-encabezado {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.contenido-encabezado h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.contenido-encabezado h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contenido-encabezado p {
+    font-size: 1.2rem;
+}
+
+.contacto h2 {
+    color: #273171;
+    font-size: 2rem;
+}
+
+.form-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.form-contacto input,
+.form-contacto textarea {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-left: 80px;
+}
+
+.form-contacto button {
+    background-color: #4a5fa1;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin: 0 auto;
+    width: 150px;
+}
+
+.form-contacto button:hover {
+    background-color: #273171
+}
+
+footer {
+    margin-top: 50px;
+    background: linear-gradient(90deg, #144C87, #4a5fa1);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.certificaciones {
+    padding: 40px;
+    text-align: center;
+}
+
+.certificaciones h2 {
+    color: #273171;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contenedor-certificaciones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contenedor-certificaciones img {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.contenedor-certificaciones img:hover {
+    transform: scale(1.1);
+}
+
+
+/* Estilo para el scrollbar */
+::-webkit-scrollbar {
+    width: 12px; /* Ancho del scrollbar */
+    height: 12px; /* Alto del scrollbar (para scroll horizontal) */
+}
+
+/* Estilo del fondo del scrollbar */
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Color de fondo del track */
+    border-radius: 10px; /* Bordes redondeados en el track */
+}
+
+/* Estilo de la barra del scrollbar */
+::-webkit-scrollbar-thumb {
+    background-color: #273171; /* Color de la barra */
+    border-radius: 10px; /* Bordes redondeados en la barra */
+    border: 2px solid #f1f1f1; /* Un borde suave para darle separación */
+}
+
+/* Efecto al pasar el mouse sobre el scrollbar */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #3b4b8d; /* Color al pasar el mouse */
+}
+
+/* Ajustes para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    #banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .videos-banner {
+        margin-left: 0; /* Quita el margen en pantallas pequeñas */
+        margin-top: 20px; /* Añade espacio entre el título y el video */
+    }
+}
